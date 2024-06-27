@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn5"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="76dp"
+        android:text="Animation Buttons"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="124dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/img1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="69dp"
+        android:text="Blink"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="116dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/img1"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="63dp"
+        android:layout_toRightOf="@+id/btn1"
+        android:text="Rotate"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="127dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/btn1"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="79dp"
+        android:text="Zoom"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="125dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/btn2"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="82dp"
+        android:layout_toRightOf="@+id/btn3"
+        android:text="Fade"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn3"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="85dp"
+        android:text="Translate"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="521dp" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="114dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn4"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="87dp"
+        android:layout_toRightOf="@+id/btn5"
+        android:backgroundTint="@color/material_dynamic_primary50"
+        android:text="Stop"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="521dp" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="357dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="19dp"
+        app:srcCompat="@drawable/img"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="53dp"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+
+</RelativeLayout>
